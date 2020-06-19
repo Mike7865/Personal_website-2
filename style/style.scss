@@ -1,12 +1,24 @@
 $dark: #22222b;
 $light: #faf9fe;
 
+body, html {
+  height: 100vh;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  color: $dark;
 }
 
 .main {
   background-image: url(../img/bg/welcome-bg.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding-top: 39px;
+  padding-bottom: 42px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -19,6 +31,14 @@ body {
   align-items: center;
 }
 
+
+.wrapper {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .nav_list {
   display: flex;
   padding-left: 0;
@@ -26,6 +46,34 @@ body {
   list-style-type: none;
 }
 
+.nav_item {
+  margin-left: 23px;
+}
+
 .nav_link {
   text-decoration: none;
+  color: $dark;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+
+  &:hover {
+    border-bottom: 1px solid $dark;
+  }
+}
+
+.main_title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.btn-scroll {
+  background-color: tranparent;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
