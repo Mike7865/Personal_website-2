@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.main {
+  background-image: url(../img/bg/welcome-bg.jpg); }
+
+.header {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav_list {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.nav_link {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
