@@ -5,6 +5,9 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #22222b; }
 
+.text-center {
+  text-align: center; }
+
 .main {
   background-image: url(../img/bg/welcome-bg.jpg);
   display: flex;
@@ -59,5 +62,112 @@ body {
   border: none;
   display: block;
   margin: 0 auto; }
+
+.section-about {
+  padding-top: 240px; }
+  .section-about .about_title {
+    margin-bottom: 20px;
+    margin-top: 12px; }
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.about_item {
+  flex: 0 0 46%;
+  max-width: 46%;
+  position: relative; }
+  .about_item:first-child {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+.about_title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.about_text {
+  color: #7f7f82;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 48px; }
+
+.item_back {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -108px; }
+
+.item_back-text {
+  position: absolute;
+  left: -4;
+  letter-spacing: 1.6px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  bottom: 58px;
+  font-size: 16px; }
+  .item_back-text::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 45px;
+    background-color: #22222b;
+    position: absolute;
+    right: 9px;
+    top: 93px; }
+
+.progress-bar {
+  font-size: 16px;
+  font-weight: 500; }
+
+.progress-bar_text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+  margin-bottom: 21px; }
+  .progress-bar_text:last-child {
+    margin-bottom: 0; }
+
+.progress-bar_line {
+  width: 100%;
+  height: 2px;
+  background-color: #22222b;
+  position: relative; }
+  .progress-bar_line::before {
+    content: "";
+    background-image: url(../img/cursor.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 6px;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 5.5px); }
+  .progress-bar_line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 2px;
+    background-color: #f2f2f2; }
+
+.progress-bar_id::after {
+  width: 35%; }
+
+.progress-bar_xd::after {
+  width: 20%; }
+
+.section-services {
+  background-color: #faf9fe; }
+
+.service {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr; }
 
 /*# sourceMappingURL=style.css.map */
