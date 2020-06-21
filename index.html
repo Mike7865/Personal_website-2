@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
@@ -31,9 +32,9 @@
     <div class="wrapper">
       <h1 class="main_title">I Am <span>Photographer</span> </h1>
     </div>
-    <button class="btn-scroll"><img src="img/scroll.png" alt="Scroll"></button>
+    <a href="#scroll" class="btn-scroll"><img src="img/scroll.png" alt="Scroll"></a>
   </section>
-  <section class="section-about">
+  <section class="section-about block-scroll" id="scroll">
     <div class="wrapper">
       <div class="about">
         <div class="about_item">
@@ -222,5 +223,84 @@
       </div>
     </div>
   </section>
+  <section class="section-achievements">
+    <div class="wrapper">
+      <div class="achievements">
+        <div class="achievements_item">
+          <div class="achievements_icon achievements_icon-01"></div>
+          <p class="achievements_title"><span>1325</span> 
+            happy customers</p>
+        </div>
+        <div class="achievements_item">
+          <div class="achievements_icon achievements_icon-02"></div>
+          <p class="achievements_title"><span>579</span> 
+            completed project</p>
+        </div>
+        <div class="achievements_item">
+          <div class="achievements_icon achievements_icon-03"></div>
+          <p class="achievements_title"><span>10</span> 
+            years experience</p>
+        </div>
+        <div class="achievements_item">
+          <div class="achievements_icon achievements_icon-04"></div>
+          <p class="achievements_title"><span>100</span> 
+            wins awards</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-form">
+    <div class="wrapper">
+      <h2 class="form_title text-center">Get in Touch</h2>
+      <p class="after-title text-center">
+        Have you any quistion? Send me message without hesitated
+      </p>
+      <div class="form_container">
+        <div class="form_note"></div>
+        <div class="form_fields">
+          <form class="form" action>
+            <input class="form__input" type="text" name="name" placeholder="Your Full Name">
+            <input class="form__input" type="email" name="email" placeholder="Email Address">
+            <textarea class="form__textarea" name="message" placeholder="Your Message"></textarea>
+            <input type="submit" name="submit" class="form-container__btn" value="Send Message">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrapper">
+      <div class="footer">
+        <span>© Copyright 2020 iGlyphic. All rights reserved</span>
+        <ul class="social_networks">
+          <li class="social_networks-item">
+            <a class="social_networks-link" href="#" target="_blank">
+              <i class="zmdi zmdi-facebook"></i>
+            </a>
+          </li>
+          <li class="social_networks-item">
+            <a class="social_networks-link" href="#" target="_blank">
+              <i class="zmdi zmdi-dropbox"></i>
+            </a>
+          </li>
+          <li class="social_networks-item">
+            <a class="social_networks-link" href="#" target="_blank">
+              <i class="zmdi zmdi-behance"></i>
+            </a>
+          </li>
+          <li class="social_networks-item">
+            <a class="social_networks-link" href="#" target="_blank">
+              <i class="zmdi zmdi-dribbble"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="contactform.js"></script>
+  <script type="text/javascript">
+    $(function(){$('a[href="#scroll"]').click(function(event){event.preventDefault()
+    var el=$('.block-scroll');$('body,html').animate({scrollTop:$(el).offset().top},1000);});});</script>
 </body>
 </html>

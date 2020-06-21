@@ -69,9 +69,15 @@ body {
     border-bottom: 1px solid #22222b; }
 
 .main_title {
-  text-align: center;
   font-size: 60px;
-  font-weight: 300; }
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  padding: 6px 29px; }
+  .main_title ::before {
+    background-image: url(../img/before-title.png);
+    left: 0;
+    top: 0; }
   .main_title span {
     font-weight: 500; }
 
@@ -406,5 +412,150 @@ body {
   font-style: italic;
   padding-left: 28px;
   line-height: 1.8; }
+
+.section-achievements {
+  padding-top: 100px;
+  padding-bottom: 82px;
+  background-color: #faf9fe; }
+
+.achievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.achievements_icon {
+  background-color: #22222b;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 0 auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 27px; }
+
+.achievements_icon-01 {
+  background-image: url(../img/icons/heart.png);
+  background-size: 26px 23px; }
+
+.achievements_icon-02 {
+  background-image: url(../img/icons/bag.png);
+  background-size: 26px 23px; }
+
+.achievements_icon-03 {
+  background-image: url(../img/icons/rounds.png);
+  background-size: 26px 24px; }
+
+.achievements_icon-04 {
+  background-image: url(../img/icons/cup.png);
+  background-size: 19px 23px; }
+
+.achievements_title {
+  font-size: 16px;
+  text-transform: uppercase; }
+
+.achievements_title span {
+  font-size: 22px;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 13px; }
+
+.section-form {
+  padding-top: 122px;
+  padding-bottom: 130px; }
+
+.form_title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 750px;
+  margin: 48px auto 0;
+  text-align: center; }
+
+.form__input, .form__textarea {
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 14px;
+  padding: 17px 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.form__textarea {
+  padding: 12px 25px;
+  min-height: 86px;
+  margin-bottom: 35px; }
+
+.form-container__btn {
+  color: #fff;
+  background-color: #22222b;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 20px 0;
+  border: none; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 16px; }
+
+.social_networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0; }
+
+.social_networks-item {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.social_networks-link {
+  color: #fff; }
+
+.zmdi {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+  font-size: inherit;
+  text-rendering: auto; }
+
+.zmdi-facebook:before {
+  content: '\f343'; }
+
+.zmdi-dropbox:before {
+  content: '\f340'; }
+
+.zmdi-behance:before {
+  content: '\f33d'; }
+
+.zmdi-dribbble:before {
+  content: '\f33f'; }
 
 /*# sourceMappingURL=style.css.map */
