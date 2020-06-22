@@ -74,10 +74,26 @@ body {
   font-weight: 300;
   position: relative;
   padding: 6px 29px; }
-  .main_title ::before {
+  .main_title::before {
     background-image: url(../img/before-title.png);
     left: 0;
-    top: 0; }
+    top: 0;
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 21px;
+    position: absolute; }
+  .main_title::after {
+    background-image: url(../img/after-title.png);
+    right: 0;
+    bottom: -4px;
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 22px;
+    position: absolute; }
   .main_title span {
     font-weight: 500; }
 
@@ -557,5 +573,10 @@ body {
 
 .zmdi-dribbble:before {
   content: '\f33f'; }
+
+footer {
+  background-color: #22222b;
+  padding-top: 64px;
+  padding-bottom: 69px; }
 
 /*# sourceMappingURL=style.css.map */
