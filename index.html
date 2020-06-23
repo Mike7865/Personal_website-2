@@ -259,11 +259,11 @@
         <div class="note"></div>
         </div>
         <div class="form_fields">
-          <form class="form" action>
+          <form class="form" id="form">
             <input class="form__input" type="text" name="name" placeholder="Your Full Name">
             <input class="form__input" type="email" name="email" placeholder="Email Address">
             <textarea class="form__textarea" name="message" placeholder="Your Message"></textarea>
-            <input type="submit" name="submit" class="form-container__btn" value="Send Message">
+            <input type="submit" name="submit" class="form-container__btn" value="Send Message" id="form-container__btn">
           </form>
         </div>
       </div>
@@ -300,6 +300,7 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="contactform.js"></script>
+  <script src="contact.js"></script>
   <script type="text/javascript">
     $(function(){$('a[href="#scroll"]').click(function(event){event.preventDefault()
     var el=$('.block-scroll');$('body,html').animate({scrollTop:$(el).offset().top},1000);});});
