@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <section class="main">
+  <section class="main" id="#main">
     <header>
       <div class="header">
         <div class="logo">
@@ -18,13 +18,13 @@
         </div>
         <nav class="nav">
           <ul class="nav_list">
-            <li class="nav_item"><a class="nav_link" href="">Home</a></li>
-            <li class="nav_item"><a class="nav_link" href="">About</a></li>
-            <li class="nav_item"><a class="nav_link" href="">Services</a></li>
-            <li class="nav_item"><a class="nav_link" href="">Portfolio</a></li>
-            <li class="nav_item"><a class="nav_link" href="">Testimonials</a></li>
-            <li class="nav_item"><a class="nav_link" href="">News</a></li>
-            <li class="nav_item"><a class="nav_link" href="">Contact</a></li>
+            <li class="nav_item"><a class="nav_link" href="main">Home</a></li>
+            <li class="nav_item"><a class="nav_link" href="section-about">About</a></li>
+            <li class="nav_item"><a class="nav_link" href="section-services">Services</a></li>
+            <li class="nav_item"><a class="nav_link" href="section-portfolio">Portfolio</a></li>
+            <li class="nav_item"><a class="nav_link" href="section-feedback">Testimonials</a></li>
+            <li class="nav_item"><a class="nav_link" href="section-banner">News</a></li>
+            <li class="nav_item"><a class="nav_link" href="section-form">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -66,7 +66,7 @@
       </div>
     </div>
   </section>
-  <section class="section-services">
+  <section class="section-services" id="section-services">
     <div class="wrapper">
       <h2 class="services_title text-center">My Services</h2>
       <p class="after-title text-center">Check out all my services and think what do you want</p>
@@ -140,7 +140,7 @@
       </div>
     </div>
   </section>
-  <section class="section-portfolio">
+  <section class="section-portfolio" id="section-portfolio">
     <div class="wrapper">
       <h2 class="portfolio_title text-center">My Portfolio</h2>
       <div class="after-title text-center">Here is all my work that i maked for some great people</div>
@@ -178,7 +178,7 @@
       </div>
     </div>
   </section>
-  <section class="section-banner">
+  <section class="section-banner" id="section-banner">
     <div class="wrapper">
       <p class="before-title text-center">
         Do you love my work?
@@ -187,12 +187,15 @@
       <a href="#" class="btn">Hire Me</a>
     </div>
   </section>
-  <section class="section-feedback">
-    <div class="wrapper">
+  <section class="section-feedback" id="section-feedback">
+    <div class="wrapper feedback_wrapper">
       <h2 class="feedback_title text-center">Testimonials</h2>
       <p class="after-title text-center">Lets check what people say about me and my work</p>
-      <div class="feedback">
-        <div class="feedback_item">
+      <a class="slider_control slider_control-left" id="left" href="#">
+        <div class="slider_control-pic"></div>
+      </a>
+      <ul class="feedback">
+        <li class="feedback_item">
           <div class="feedback_top">
             <div class="feedback_thumb">
               <img src="img/feedback/reviewer_1.png" alt="Jonathon">
@@ -205,8 +208,8 @@
           <div class="feedback_body">
             <p>Finding the right partner to help make this goal a reality was key. The smart and creative team at Blue Fountain Media has helped anthony.com establish itself as a successful online business and become synonymous with an enjoyable solutions.</p>
           </div>
-        </div>
-        <div class="feedback_item">
+        </li>
+        <li class="feedback_item">
           <div class="feedback_top">
             <div class="feedback_thumb">
               <img src="img/feedback/reviewer_2.png" alt="Emalia">
@@ -219,8 +222,11 @@
           <div class="feedback_body">
             <p>Blue Fountain Media came up with the design on their first try, delivered the complete package on a reasonable budget, and continued to fine-tune it. That wasn't enough -- they also created a plan to market the website and increase traffic.</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
+      <a class="slider_control slider_control-right" id="right" href="#">
+        <div class="slider_control-pic"></div>
+      </a>
     </div>
   </section>
   <section class="section-achievements">
@@ -249,7 +255,7 @@
       </div>
     </div>
   </section>
-  <section class="section-form">
+  <section class="section-form" id="section-form">
     <div class="wrapper">
       <h2 class="form_title text-center">Get in Touch</h2>
       <p class="after-title text-center">
@@ -298,12 +304,18 @@
       </div>
     </div>
   </footer>
+  <script type="template" id="overlayTemplate">
+    <div class="overlay__container">
+        <a class="close" href="#">x</a>
+        <div class="overlay__content"></div>
+    </div>
+</script>
+<script src="./jquery-3.5.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="contactform.js"></script>
-  <script src="contact.js"></script>
   <script type="text/javascript">
     $(function(){$('a[href="#scroll"]').click(function(event){event.preventDefault()
     var el=$('.block-scroll');$('body,html').animate({scrollTop:$(el).offset().top},1000);});});
   </script>
+  <script src="main.js"></script>
 </body>
 </html>
