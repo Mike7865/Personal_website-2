@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.social_networks {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.social_networks-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.social_networks-link {
+  color: #fff;
+}
+
+.zmdi {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.zmdi-facebook:before {
+  content: '\f343';
+}
+
+.zmdi-dropbox:before {
+  content: '\f340';
+}
+
+.zmdi-behance:before {
+  content: '\f33d';
+}
+
+.zmdi-dribbble:before {
+  content: '\f33f';
+}

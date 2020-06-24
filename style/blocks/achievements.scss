@@ -1,0 +1,55 @@
+.section-achievements {
+  padding-top: 100px;
+  padding-bottom: 82px;
+  background-color: #faf9fe;
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.achievements_icon {
+  background-color: #22222b;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 0 auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 27px;
+}
+
+.achievements_icon-01 {
+  background-image: url(../img/icons/heart.png);
+  background-size: 26px 23px;
+}
+
+.achievements_icon-02 {
+  background-image: url(../img/icons/bag.png);
+  background-size: 26px 23px;
+}
+
+.achievements_icon-03 {
+  background-image: url(../img/icons/rounds.png);
+  background-size: 26px 24px;
+}
+
+.achievements_icon-04 {
+  background-image: url(../img/icons/cup.png);
+  background-size: 19px 23px;
+}
+
+.achievements_title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.achievements_title span {
+  font-size: 22px;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 13px;
+}

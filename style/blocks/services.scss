@@ -1,0 +1,84 @@
+.section-services {
+  background-color: $light;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.services_title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.service {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 31px 48px;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  &_text {
+    color: $text;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  &_link {
+    color: $dark;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+  }
+  &_link-text {
+    opacity: 0;
+    width: 0;
+    padding-right: 0;
+    transition: 0.4s ease-in-out;
+  }
+  &_link-line {
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: #22222b;
+  }
+  &_icon {
+    background-repeat: no-repeat;
+    display: block;
+    width: 44px;
+    height: 37px;
+    margin-bottom: 30px;
+  }
+  &_design {
+    background-image: url(../img/files/gd_icon.png);
+    background-size: 41px 35px;
+  }
+  &_photo {
+    background-image: url(../img/files/ph_icon.png);
+    background-size: 43px 35px;
+  }
+  &_web {
+    background-image: url(../img/files/wd_icon.png);
+    background-size: 41px 35px;
+  }
+  &_social {
+    background-image: url(../img/files/sm_icon.png);
+    background-size: 37px 37px;
+  }
+  &_marketing {
+    background-image: url(../img/files/mar_icon.png);
+    background-size: 44px 37px;
+  }
+  &_app {
+    background-image: url(../img/files/ad_icon.png);
+    background-size: 37px 37px;
+  }
+  
+}
+
+.service_title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
