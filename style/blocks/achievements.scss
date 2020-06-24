@@ -20,6 +20,11 @@
   background-position: center center;
   background-repeat: no-repeat;
   margin-bottom: 27px;
+  @include phones {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
 }
 
 .achievements_icon-01 {
@@ -45,6 +50,9 @@
 .achievements_title {
   font-size: 16px;
   text-transform: uppercase;
+  @include phones {
+    font-size: 10px;
+  }
 }
 
 .achievements_title span {
@@ -52,4 +60,7 @@
   display: block;
   font-weight: 500;
   margin-bottom: 13px;
+  @include phones {
+    font-size: 18px;
+  }
 }

@@ -4,6 +4,9 @@
   align-items: center;
   color: #fff;
   font-size: 16px;
+  @include phones {
+    font-size: 13px;
+  }
 }
 
 .social_networks {

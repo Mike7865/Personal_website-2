@@ -13,6 +13,9 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px;
+  @include phones {
+    font-size: 35px;
+  }
 }
 
 .slider_control {
@@ -26,12 +29,18 @@
     transform: rotate(227deg);
     left: -14px;
     top: 248px;  
+    @include tablets {
+      left: 8px;
+    }
   }
 
   &-right {
     transform: rotate(404deg);
     right: -14px;
     top: 248px;
+    @include tablets {
+      right: 8px;
+    }
   }
 }
 
@@ -51,6 +60,9 @@
 .feedback_item {
   flex: 0 0 45%;
   max-width: 45%;
+  @include phones {
+    min-width: 100%;
+  }
 }
 
 .feedback_top {
@@ -58,16 +70,27 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 56px;
+  @include phones {
+    margin-bottom: 0;
+  }
 }
 
 .feedback_thumb {
   margin-right: 20px;
 }
 
+.reviewer_photo {
+  height: 50px;
+  width: 50px;
+}
+
 .feedback_reviewer-name {
   font-size: 22px;
   margin-top: 14px;
   margin-bottom: 11px;
+  @include phones {
+    font-size: 16px;
+  }
 }
 
 .feedback_reviewer-position {
@@ -81,4 +104,8 @@
   font-style: italic;
   padding-left: 28px;
   line-height: 1.8;
+  @include phones {
+    font-size: 14px;
+    padding-left: 2px;
+  }
 }

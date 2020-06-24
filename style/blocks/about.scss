@@ -6,6 +6,10 @@
     margin-bottom: 20px;
     margin-top: 12px;
   }
+
+  @include phones {
+    padding-top: 123px;
+  }
 }
 
 .about {
@@ -30,6 +34,9 @@
   font-size: 48px;
   font-weight: 500;
   margin-top: 12px;
+  @include phones {
+    font-size: 35px;
+  }
 }
 
 .about_text {
@@ -37,6 +44,11 @@
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 48px;
+  @include phones {
+    font-size: 11px;
+    margin-bottom: 26px;
+  }
+
 }
 
 .item_back {
@@ -44,6 +56,10 @@
   z-index: -1;
   left: 0;
   top: -108px;
+
+  @include tablets {
+    width: 80%;
+  }
 }
 
 .item_back-text {
@@ -63,6 +79,35 @@
     position: absolute;
     right: 9px;
     top: 93px;
+    @include phones {
+      height: 28px;
+      right: 6px;
+      top: 73px;
+    }
+  }
+
+  @include tablets {
+    bottom: -6px;
+    font-size: 14px;
+  }
+  @include phones {
+    font-size: 9px;
+    bottom: 16px;
+  }
+}
+
+.item_front {
+  @include tablets {
+    width: 80%;
+  }
+}
+
+.progress-bar {
+  @include tablets {
+    padding-bottom: 85px;
+  }
+  @include phones {
+    padding-bottom: 100px;
   }
 }
 
@@ -75,6 +120,9 @@
   margin-bottom: 21px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @include phones {
+    font-size: 9px;
   }
 }
 

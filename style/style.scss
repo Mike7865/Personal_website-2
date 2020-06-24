@@ -5,6 +5,9 @@ $text: #7f7f82;
 //normalize
 @import "normalize.css";
 
+// media
+@import "media.scss";
+
 //setups
 @import "blocks/main.scss";
 @import "blocks/about.scss";
@@ -47,11 +50,17 @@ body {
 .before-title {
   font-size: 22px;
   margin-bottom: 0;
+  @include phones {
+    font-size: 18px;
+  }
 }
 
 .after-title {
   font-size: 16px;
   color: $text;
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 footer {

@@ -74,6 +74,9 @@
   span {
     font-weight: 500;
   }
+  @include phones {
+    font-size: 42px;
+  }
 }
 
 .btn-scroll {

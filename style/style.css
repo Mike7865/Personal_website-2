@@ -82,6 +82,9 @@
     position: absolute; }
   .main_title span {
     font-weight: 500; }
+  @media screen and (max-width: 480px) {
+    .main_title {
+      font-size: 42px; } }
 
 .btn-scroll {
   background-color: tranparent;
@@ -95,6 +98,9 @@
   .section-about .about_title {
     margin-bottom: 20px;
     margin-top: 12px; }
+  @media screen and (max-width: 480px) {
+    .section-about {
+      padding-top: 123px; } }
 
 .about {
   display: -webkit-box;
@@ -129,18 +135,28 @@
   font-size: 48px;
   font-weight: 500;
   margin-top: 12px; }
+  @media screen and (max-width: 480px) {
+    .about_title {
+      font-size: 35px; } }
 
 .about_text {
   color: #7f7f82;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 48px; }
+  @media screen and (max-width: 480px) {
+    .about_text {
+      font-size: 11px;
+      margin-bottom: 26px; } }
 
 .item_back {
   position: absolute;
   z-index: -1;
   left: 0;
   top: -108px; }
+  @media screen and (max-width: 768px) {
+    .item_back {
+      width: 80%; } }
 
 .item_back-text {
   position: absolute;
@@ -162,6 +178,30 @@
     position: absolute;
     right: 9px;
     top: 93px; }
+    @media screen and (max-width: 480px) {
+      .item_back-text::after {
+        height: 28px;
+        right: 6px;
+        top: 73px; } }
+  @media screen and (max-width: 768px) {
+    .item_back-text {
+      bottom: -6px;
+      font-size: 14px; } }
+  @media screen and (max-width: 480px) {
+    .item_back-text {
+      font-size: 9px;
+      bottom: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .item_front {
+    width: 80%; } }
+
+@media screen and (max-width: 768px) {
+  .progress-bar {
+    padding-bottom: 85px; } }
+@media screen and (max-width: 480px) {
+  .progress-bar {
+    padding-bottom: 100px; } }
 
 .progress-bar_text {
   display: -webkit-box;
@@ -178,6 +218,9 @@
   margin-bottom: 21px; }
   .progress-bar_text:last-child {
     margin-bottom: 0; }
+  @media screen and (max-width: 480px) {
+    .progress-bar_text {
+      font-size: 9px; } }
 
 .progress-bar_line {
   width: 100%;
@@ -217,6 +260,9 @@
   font-size: 48px;
   font-weight: 500;
   margin-top: 0; }
+  @media screen and (max-width: 480px) {
+    .services_title {
+      font-size: 35px; } }
 
 .service {
   display: grid;
@@ -228,6 +274,9 @@
     color: #7f7f82;
     font-size: 14px;
     line-height: 1.8; }
+    @media screen and (max-width: 480px) {
+      .service_text {
+        font-size: 11px; } }
   .service_link {
     color: #22222b;
     font-size: 14px;
@@ -260,6 +309,10 @@
     width: 44px;
     height: 37px;
     margin-bottom: 30px; }
+    @media screen and (max-width: 480px) {
+      .service_icon {
+        margin-left: 27px;
+        margin-bottom: 0; } }
   .service_design {
     background-image: url(../img/files/gd_icon.png);
     background-size: 41px 35px; }
@@ -283,6 +336,10 @@
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 18px; }
+  @media screen and (max-width: 480px) {
+    .service_title {
+      font-size: 14px;
+      margin-left: 7px; } }
 
 .section-portfolio {
   padding-top: 123px;
@@ -293,12 +350,28 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .portfolio_title {
+      font-size: 35px; } }
 
 .portfolio {
   display: grid;
   grid-template: repeat(7, 88px)/1fr 1fr 1fr;
   grid-gap: 40px;
   margin-top: 83px; }
+  @media screen and (max-width: 768px) {
+    .portfolio {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 40px; } }
 
 .portfolio_thumb {
   position: relative;
@@ -342,6 +415,9 @@
   margin-top: 15px;
   margin-bottom: 42px;
   font-weight: 400; }
+  @media screen and (max-width: 480px) {
+    .banner_title {
+      font-size: 35px; } }
 
 .btn {
   color: #22222b;
@@ -363,6 +439,9 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .feedback_title {
+      font-size: 35px; } }
 
 .slider_control {
   display: block;
@@ -375,11 +454,17 @@
             transform: rotate(227deg);
     left: -14px;
     top: 248px; }
+    @media screen and (max-width: 768px) {
+      .slider_control-left {
+        left: 8px; } }
   .slider_control-right {
     -webkit-transform: rotate(404deg);
             transform: rotate(404deg);
     right: -14px;
     top: 248px; }
+    @media screen and (max-width: 768px) {
+      .slider_control-right {
+        right: 8px; } }
 
 .slider_control-pic {
   width: 15px;
@@ -401,6 +486,9 @@
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;
   max-width: 45%; }
+  @media screen and (max-width: 480px) {
+    .feedback_item {
+      min-width: 100%; } }
 
 .feedback_top {
   display: -webkit-box;
@@ -413,14 +501,24 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 56px; }
+  @media screen and (max-width: 480px) {
+    .feedback_top {
+      margin-bottom: 0; } }
 
 .feedback_thumb {
   margin-right: 20px; }
+
+.reviewer_photo {
+  height: 50px;
+  width: 50px; }
 
 .feedback_reviewer-name {
   font-size: 22px;
   margin-top: 14px;
   margin-bottom: 11px; }
+  @media screen and (max-width: 480px) {
+    .feedback_reviewer-name {
+      font-size: 16px; } }
 
 .feedback_reviewer-position {
   font-size: 12px;
@@ -432,6 +530,10 @@
   font-style: italic;
   padding-left: 28px;
   line-height: 1.8; }
+  @media screen and (max-width: 480px) {
+    .feedback_body {
+      font-size: 14px;
+      padding-left: 2px; } }
 
 .section-achievements {
   padding-top: 100px;
@@ -458,6 +560,11 @@
   background-position: center center;
   background-repeat: no-repeat;
   margin-bottom: 27px; }
+  @media screen and (max-width: 480px) {
+    .achievements_icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 16px; } }
 
 .achievements_icon-01 {
   background-image: url(../img/icons/heart.png);
@@ -478,12 +585,18 @@
 .achievements_title {
   font-size: 16px;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .achievements_title {
+      font-size: 10px; } }
 
 .achievements_title span {
   font-size: 22px;
   display: block;
   font-weight: 500;
   margin-bottom: 13px; }
+  @media screen and (max-width: 480px) {
+    .achievements_title span {
+      font-size: 18px; } }
 
 .section-form {
   padding-top: 122px;
@@ -544,6 +657,9 @@
           align-items: center;
   color: #fff;
   font-size: 16px; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      font-size: 13px; } }
 
 .social_networks {
   display: -webkit-box;
@@ -646,10 +762,16 @@ body {
 .before-title {
   font-size: 22px;
   margin-bottom: 0; }
+  @media screen and (max-width: 480px) {
+    .before-title {
+      font-size: 18px; } }
 
 .after-title {
   font-size: 16px;
   color: #7f7f82; }
+  @media screen and (max-width: 480px) {
+    .after-title {
+      font-size: 14px; } }
 
 footer {
   background-color: #22222b;
