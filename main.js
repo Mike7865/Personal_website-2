@@ -1,72 +1,3 @@
-//Scroll
-const sections = $(".section");
-const display = $(".wrapper");
-let inscroll = false;
-
-const mobileDetect = new MobileDetect(window.navigator.userAgent);
-const isMobile = mobileDetect.mobile();
-
-const countPositionPercent = sectionEq => {
-  return `${sectionEq * -100}%`;
-};
-
-const switchActiveClass = (elems, elemNdx) => {
-  elems
-    .eq(elemNdx)
-    .addClass("active")
-    .siblings()
-    .removeClass("active");
-};
-
-const unBlockScroll = () => {
-  setTimeout(() => {
-    inscroll = false;
-  }, 1300); // подождать пока завершится инерция на тачпадах
-};
-
-const scrollViewport = direction => {
-  const activeSection = sections.filter(".active");
-  const nextSection = activeSection.next();
-  const prevSection = activeSection.prev();
-
-  if (direction === "next" && nextSection.length) {
-    performTransition(nextSection.index());
-  }
-
-  if (direction === "prev" && prevSection.length) {
-    performTransition(prevSection.index());
-  }
-};
-
-$(document).on({
-  wheel: e => {
-    const deltaY = e.originalEvent.deltaY;
-    const direction = deltaY > 0 ? "next" : "prev";
-    scrollViewport(direction);
-  },
-  keydown: e => {
-    const tagName = e.target.tagName.toLowerCase();
-    const userTypingInInputs = tagName === "input" || tagName === "textarea";
-
-    if (userTypingInInputs) return;
-
-    switch (e.keyCode) {
-      case 40:
-        scrollViewport("next");
-        break;
-
-      case 38:
-        scrollViewport("prev");
-        break;
-    }
-  }
-});
-
-$("[data-scroll-to]").on("click", e => {
-  e.preventDefault();
-  performTransition(parseInt($(e.currentTarget).attr("data-scroll-to")));
-});
-
 // Hamburger-menu
 var hamburgerButton = document.querySelector(".hamburger");
 var hamburgerMenu = document.querySelector(".nav");
@@ -132,27 +63,6 @@ left.addEventListener("click", function (e) {
     feedback.style.right = currentRight + "%";
   }
 });
-
-
-// Оверлей
-function createOverlay(content) {
-  const overlayElement = document.createElement("div");
-  overlayElement.classList.add("overlay");
-
-  const template = document.querySelector("#overlayTemplate");
-  overlayElement.innerHTML = template.innerHTML;
-
-  const closeElement = overlayElement.querySelector(".close");
-  closeElement.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.body.removeChild(overlayElement);
-  });
-
-  const contentElement = overlayElement.querySelector(".overlay__content");
-  contentElement.innerHTML = content;
-
-  return overlayElement;
-}
 
 
 const myForm = document.querySelector("#form");
