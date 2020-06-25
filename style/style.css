@@ -551,6 +551,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .thumb_hover ::before {
+    background-image: url(../../img/upper_corner.png);
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    position: absolute; }
+  .thumb_hover ::after {
+    background-image: url(../../img/lower_corner.png);
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    position: absolute; }
   .thumb_hover:hover {
     opacity: 1;
     background-color: #d7d9de; }
